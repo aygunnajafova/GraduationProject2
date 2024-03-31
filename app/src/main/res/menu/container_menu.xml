@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/homeFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/home_icon"
+        android:title="Əsas" />
+    <item
+        android:id="@+id/investmentFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/investment_icon"
+        android:title="İnvestisiya" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <item
+        android:id="@+id/forYouFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/grid_icon"
+        android:title="Sənə özəl" />
+    <item
+        android:id="@+id/moreFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        android:title="Daha çox" />
+</menu>

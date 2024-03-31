@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.home.SingleCardFragment"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="15dp"
+    android:backgroundTint="#98c5fe">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:paddingHorizontal="18dp">
+
+        <TextView
+            android:id="@+id/tvSingleCardType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mastercard"
+            android:textSize="15sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvSingleCardMainBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSingleCardType" />
+
+        <TextView
+            android:id="@+id/tvSingleCardCoinBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:text=".00 ₼"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSingleCardMainBalance"
+            app:layout_constraintLeft_toRightOf="@+id/tvSingleCardMainBalance" />
+
+        <LinearLayout
+            android:id="@+id/layoutSingeCardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/single_card_light_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSingleCardCoinBalance">
+
+            <ImageView
+                android:id="@+id/ivSingleCardType"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/visacardlogo" />
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/single_card_dot_bg" />
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/single_card_dot_bg" />
+
+            <TextView
+                android:id="@+id/tvSingleCardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8988"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/single_card_light_bg"
+            android:text="10/28"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@+id/layoutSingeCardNumber"
+            app:layout_constraintTop_toTopOf="@+id/layoutSingeCardNumber" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSingleCardTopUp"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnSingleCardPay"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutSingeCardNumber"
+            android:layout_marginTop="55dp"
+            android:text="Artır"
+            style="@style/SingleCardButton"
+            app:icon="@drawable/arrow_back_icon"
+            app:iconGravity="textStart"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSingleCardPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/btnSingleCardTransfer"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSingleCardTopUp"
+            app:layout_constraintTop_toTopOf="@+id/btnSingleCardTopUp"
+            android:layout_marginHorizontal="12dp"
+            android:text="Ödə"
+            style="@style/SingleCardButton"
+            app:icon="@drawable/arrow_back_icon"
+            app:iconGravity="textStart"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSingleCardTransfer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnSingleCardPay"
+            app:layout_constraintTop_toTopOf="@+id/btnSingleCardTopUp"
+            android:text="Köçür"
+            style="@style/SingleCardButton"
+            app:icon="@drawable/arrow_back_icon"
+            app:iconGravity="textStart"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

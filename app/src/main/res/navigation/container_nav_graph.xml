@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.aygun.graduationproject2.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/investmentFragment"
+        android:name="com.example.aygun.graduationproject2.ui.fragment.InvestmentFragment"
+        android:label="fragment_investment"
+        tools:layout="@layout/fragment_investment" />
+    <fragment
+        android:id="@+id/forYouFragment"
+        android:name="com.example.aygun.graduationproject2.ui.fragment.ForYouFragment"
+        android:label="fragment_for_you"
+        tools:layout="@layout/fragment_for_you" />
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.example.aygun.graduationproject2.ui.fragment.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" />
+</navigation>

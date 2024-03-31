@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.LoginFragment">
+
+    <ImageView
+        android:id="@+id/ivLoginBackArrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="5dp"
+        android:src="@drawable/arrow_back_icon" />
+
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ivLoginBackArrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:text="Enter your PIN code"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/v1Login"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/login_view_default_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/v2Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvLoginTitle"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <View
+        android:id="@+id/v2Login"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginHorizontal="25dp"
+        android:background="@drawable/login_view_default_bg"
+        app:layout_constraintEnd_toStartOf="@+id/v3Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/v1Login"
+        app:layout_constraintTop_toTopOf="@+id/v1Login" />
+
+    <View
+        android:id="@+id/v3Login"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/login_view_default_bg"
+        app:layout_constraintEnd_toStartOf="@+id/v4Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/v2Login"
+        app:layout_constraintTop_toTopOf="@+id/v1Login" />
+
+    <View
+        android:id="@+id/v4Login"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/login_view_default_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/v3Login"
+        app:layout_constraintTop_toTopOf="@+id/v1Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn1Login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn2Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v1Login"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn2Login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn3Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn1Login"
+        app:layout_constraintTop_toTopOf="@+id/btn1Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn3Login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn2Login"
+        app:layout_constraintTop_toTopOf="@+id/btn1Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn4Login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="4"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn5Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn5Login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="5"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn6Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn4Login"
+        app:layout_constraintTop_toTopOf="@+id/btn4Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn6Login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="6"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn5Login"
+        app:layout_constraintTop_toTopOf="@+id/btn4Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn7Login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="7"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn8Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn4Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn8Login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="8"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn9Login"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn7Login"
+        app:layout_constraintTop_toTopOf="@id/btn7Login" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn9Login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="9"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn8Login"
+        app:layout_constraintTop_toTopOf="@id/btn7Login" />
+
+    <ImageView
+        android:id="@+id/ivLoginFaceId"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/face_id_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/btn0Login"
+        app:layout_constraintTop_toTopOf="@+id/btn0Login"
+        app:layout_constraintLeft_toLeftOf="@id/btn7Login"
+        app:layout_constraintRight_toRightOf="@id/btn7Login"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn0Login"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/btn7Login"
+        app:layout_constraintLeft_toLeftOf="@+id/btn8Login"/>
+
+    <ImageView
+        android:id="@+id/ivLoginBackspace"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:src="@drawable/backspace_fill_icon"
+        app:layout_constraintRight_toRightOf="@+id/btn9Login"
+        app:layout_constraintTop_toTopOf="@+id/btn0Login"
+        app:layout_constraintBottom_toBottomOf="@+id/btn0Login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn0Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:text="Forgot PIN code?"
+        android:textSize="16sp"
+        android:textColor="@color/dark_blue"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
