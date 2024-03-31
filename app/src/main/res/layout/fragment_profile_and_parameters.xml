@@ -8,14 +8,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingVertical="20dp">
+
+        <TextView
+            android:id="@+id/tvForYouTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sənə özəl"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/layoutProfileSettings"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/white_item_bg">
+            android:background="@drawable/white_item_bg"
+            android:paddingRight="15dp"
+            android:layout_marginTop="25dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -121,7 +132,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/white_item_bg"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:paddingRight="15dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -245,7 +257,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/white_item_bg"
-            android:layout_marginTop="15dp">
+            android:layout_marginTop="15dp"
+            android:paddingRight="15dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -366,6 +379,105 @@
                     android:layout_gravity="center"
                     android:src="@drawable/right_angle_icon"/>
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutProfileSecurity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/white_item_bg"
+            android:layout_marginTop="15dp"
+            android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Təhlükəsizlik"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutProfileSecurityMyDevices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/mydevicesicon"
+                    android:scaleType="fitCenter"
+                    android:layout_margin="15dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mənim cihazlarım"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Aktiv 3 cihaz"
+                        android:textSize="17sp"
+                        android:textColor="@color/light_gray"/>
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/right_angle_icon"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutProfileSecurityTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@drawable/termsicon"
+                    android:scaleType="fitCenter"
+                    android:layout_margin="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="İstifadə qaydaları və şərtləri"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/right_angle_icon"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutProfileLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/white_item_bg"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:src="@drawable/logouticon"
+                android:scaleType="fitCenter"
+                android:layout_margin="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Çıxış"
+                android:textSize="18sp"
+                android:textColor="@color/dark_red"/>
         </LinearLayout>
 
     </LinearLayout>

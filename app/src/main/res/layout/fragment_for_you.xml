@@ -129,8 +129,8 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="5dp">
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
                     android:src="@drawable/insuranceicon"
                     android:scaleType="fitCenter"
                     android:layout_margin="15dp"/>
@@ -168,8 +168,8 @@
                 android:orientation="horizontal"
                 android:layout_marginTop="5dp">
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
                     android:src="@drawable/onlinequeuicon"
                     android:scaleType="fitCenter"
                     android:layout_margin="15dp"/>
@@ -187,8 +187,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
                     android:src="@drawable/cardordericon"
                     android:scaleType="fitCenter"
                     android:layout_margin="15dp"/>
@@ -206,8 +206,8 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
                     android:src="@drawable/loanordericon"
                     android:scaleType="fitCenter"
                     android:layout_margin="15dp"/>
