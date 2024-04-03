@@ -8,16 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:paddingVertical="20dp">
-
-        <TextView
-            android:id="@+id/tvForYouTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sənə özəl"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/layoutProfileSettings"
@@ -25,8 +16,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/white_item_bg"
-            android:paddingRight="15dp"
-            android:layout_marginTop="25dp">
+            android:paddingRight="15dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

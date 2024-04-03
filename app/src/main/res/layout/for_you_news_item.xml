@@ -9,6 +9,7 @@
     android:padding="15dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutForYouNewsItem"
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:background="@drawable/item_bg_corner"
@@ -16,24 +17,16 @@
         android:layout_margin="3dp"
         android:padding="3dp">
 
-        <View
-            android:id="@+id/viewForYouNewsItem"
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivForYouNewsItem"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@android:color/holo_green_dark"
-            android:background="@drawable/item_bg_corner">
-        </View>
-
-        <TextView
-            android:id="@+id/tvForYouSpecialNewsItemTitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Partnyorlarr"
+            android:src="@drawable/news_img111"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_margin="10dp"
-            android:textSize="16sp"
-            android:textColor="@color/white" />
+            app:shapeAppearanceOverlay="@style/CornerRadius" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

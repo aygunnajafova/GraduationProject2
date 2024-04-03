@@ -25,7 +25,4 @@ class HomeViewPagerAdapter(fragmentManager: FragmentManager,lifecycle: Lifecycle
             else -> Fragment()
         }
     }
-
-
-
 }

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="40dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivBitcoinItem"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars"/>
+
+        <TextView
+            android:id="@+id/tvBitcoinItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="IBIT"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tvBitcoinItemSubtitle"
+            app:layout_constraintLeft_toRightOf="@+id/ivBitcoinItem"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvBitcoinItemPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="-0.95 %"
+            android:textColor="@color/dark_red"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/tvBitcoinItemTitle"
+            app:layout_constraintTop_toTopOf="@+id/tvBitcoinItemTitle" />
+
+        <TextView
+            android:id="@+id/tvBitcoinItemSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="12"
+            android:text="ISHARES BITCOIN"
+            android:textColor="@color/light_gray"
+            app:layout_constraintBottom_toBottomOf="@+id/ivBitcoinItem"
+            app:layout_constraintLeft_toLeftOf="@+id/tvBitcoinItemTitle"
+            app:layout_constraintTop_toBottomOf="@+id/tvBitcoinItemTitle" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

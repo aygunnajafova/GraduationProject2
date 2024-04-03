@@ -4,16 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragment.MoreFragment">
+    tools:context=".ui.fragment.MoreFragment"
+    android:paddingVertical="20dp">
+
+    <TextView
+        android:id="@+id/tvMoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Daha çox"
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
         android:name="com.example.aygun.graduationproject2.ui.fragment.more.ProfileAndParametersFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMoreTitle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
