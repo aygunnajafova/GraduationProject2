@@ -22,8 +22,9 @@ class InvestmentFragment : Fragment() {
             BitcoinModel("BITB","BITWISE BITCOIN",7.10,R.drawable.bitcoin_icon4),
             BitcoinModel("BTCO","INVESCO GALA",7.11,R.drawable.bitcoin_icon5),
             BitcoinModel("BTCW","WISDOMTREE B",6.99,R.drawable.bitcoin_icon6),
-            BitcoinModel("IBIT","ISHARES BITCOIN",7.12,R.drawable.bitcoin_icon1),
-            BitcoinModel("IBIT","ISHARES BITCOIN",7.12,R.drawable.bitcoin_icon1)))
+            BitcoinModel("HODL","VANECK BITCOIN",7.13,R.drawable.bitcoin_icon7),
+            BitcoinModel("EZBC","FRANKLIN BITCOIN",7.14,R.drawable.bitcoin_icon8),
+            BitcoinModel("FBTC","FIDELITSY WIS",7.09,R.drawable.bitcoin_icon9)))
         binding.rvInvestmentBitcoins.adapter = bitcoinAdapter
         return binding.root
     }

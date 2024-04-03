@@ -189,9 +189,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="27dp"
-                    android:layout_height="27dp"
-                    android:src="@drawable/termsicon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/faqicon"
                     android:scaleType="fitCenter"
                     android:layout_margin="15dp"/>
                 <TextView
@@ -208,14 +208,14 @@
                     android:src="@drawable/right_angle_icon"/>
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/layoutInvestmentSuggestions"
+                android:id="@+id/layoutInvestmentOffers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <ImageView
-                    android:layout_width="27dp"
-                    android:layout_height="27dp"
-                    android:src="@drawable/termsicon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/offericon"
                     android:scaleType="fitCenter"
                     android:layout_margin="15dp"/>
                 <TextView

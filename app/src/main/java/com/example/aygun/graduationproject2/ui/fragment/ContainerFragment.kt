@@ -10,6 +10,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI
 import com.example.aygun.graduationproject2.R
 import com.example.aygun.graduationproject2.databinding.FragmentContainerBinding
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class ContainerFragment : Fragment() {
     private lateinit var binding: FragmentContainerBinding
@@ -18,6 +19,18 @@ class ContainerFragment : Fragment() {
 
         val containerNavHostFragment = childFragmentManager.findFragmentById(R.id.navHostContainer) as NavHostFragment
         NavigationUI.setupWithNavController(binding.bottomNavContainer,containerNavHostFragment.navController)
+
+        binding.ivNavigationBottomSheet.setOnClickListener {
+            showBottomSheet()
+        }
+
         return binding.root
+    }
+
+    private fun showBottomSheet() {
+        val dialogView = layoutInflater.inflate(R.layout.fragment_bottom_sheet,null)
+        val dialog = BottomSheetDialog(requireContext(),R.style.BottomSheetDialogTheme)
+        dialog.setContentView(dialogView)
+        dialog.show()
     }
 }

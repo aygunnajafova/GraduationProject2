@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import com.example.aygun.graduationproject2.R
+import com.example.aygun.graduationproject2.data.model.ForYouNewsModel
 import com.example.aygun.graduationproject2.data.model.MixedInfoModel
 import com.example.aygun.graduationproject2.databinding.FragmentForYouBinding
 import com.example.aygun.graduationproject2.ui.adapter.ForYouNewsAdapter
@@ -20,7 +21,14 @@ class ForYouFragment : Fragment() {
     private lateinit var partnersAdapter: PartnersAdapter
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentForYouBinding.inflate(inflater,container,false)
-        newsAdapter = ForYouNewsAdapter()
+        newsAdapter = ForYouNewsAdapter( mutableListOf(
+            ForYouNewsModel(0,"Xəbərlər",R.drawable.news_img1),
+            ForYouNewsModel(1,"Sığorta",R.drawable.news_img2),
+            ForYouNewsModel(2,"Tətbiqdə yeniliklər",R.drawable.news_img3),
+            ForYouNewsModel(3,"Bilirdinizmi?",R.drawable.news_img4),
+            ForYouNewsModel(4,"İnvestisiya xəbərləri",R.drawable.news_img5),
+            ForYouNewsModel(5,"Partnyor endirimləri",R.drawable.news_img6)
+        ))
         binding.rvForYouNews.adapter = newsAdapter
 
         mixedInfoAdapter = MixedInfoAdapter(mutableListOf<MixedInfoModel>(

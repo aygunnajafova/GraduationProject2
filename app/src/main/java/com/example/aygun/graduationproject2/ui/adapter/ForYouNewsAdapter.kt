@@ -6,27 +6,18 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.aygun.graduationproject2.R
 import com.example.aygun.graduationproject2.data.model.ForYouNewsModel
 import com.example.aygun.graduationproject2.databinding.ForYouNewsItemBinding
 
-class ForYouNewsAdapter : RecyclerView.Adapter<ForYouNewsAdapter.ForYouNewsItemViewHolder>() {
-    private val newsModel = mutableListOf<ForYouNewsModel> (
-        ForYouNewsModel(0,"Xəbərlər","#4d5bbd"),
-        ForYouNewsModel(1,"Sığorta","#8a36b2"),
-        ForYouNewsModel(2,"Tətbiqdə yeniliklər","#4d5bbd"),
-        ForYouNewsModel(3,"Bilirdinizmi?","#4d5bbd"),
-        ForYouNewsModel(4,"İnvestisiya xəbərləri","#4d5bbd"),
-        ForYouNewsModel(5,"Partnyor endirimləri","#4d5bbd")
-    )
+class ForYouNewsAdapter(private val newsModel: List<ForYouNewsModel>) : RecyclerView.Adapter<ForYouNewsAdapter.ForYouNewsItemViewHolder>() {
 
     inner class ForYouNewsItemViewHolder(private val binding: ForYouNewsItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(item: ForYouNewsModel) {
-            binding.tvForYouSpecialNewsItemTitle.text = item.title
-            when(item.id) {
-                //0 -> binding.viewForYouNewsItem.setBackgroundColor(binding.root.context.getColor(R.color.for_you_item4))
-            }
-
+            Glide.with(binding.root)
+                .load(item.image)
+                .into(binding.ivForYouNewsItem)
         }
     }
 
